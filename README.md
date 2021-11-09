@@ -8,6 +8,7 @@ This program contain 6 functions to solve problems.
 ```python
 count_evens()
 analyze()
+validate_password()
 sort_deck()
 int_to_col()
 get_depth()
