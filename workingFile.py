@@ -1,3 +1,4 @@
+
 # Question #2:
 def analyze(str1):
     d=0
@@ -12,6 +13,36 @@ def analyze(str1):
     print(l,d)
 
 analyze("2345ab")
+
+def sort_deck(input):
+    customOreder = {'Jack':0, 'Queen':1, 'King':2,'Ace':3}
+    strs = list(filter(lambda x : type(x) ==str,input))
+    ints = list(filter(lambda x: type(x) == int, input))
+
+    output =  sorted(ints) + sorted(strs,key=customOreder.__getitem__)
+    return output
+# print(sort_deck([2,3,5,4,'Queen','King',7,'Ace','Queen', 9,'Jack','King']))
+
+def int_to_col(n):
+    if n==0:
+        return 'Invalid column number'
+    elif not isinstance(n,int):
+        return 'Invalid column number'
+    string = ''
+    while n > 0:
+        rem = n%26
+        print('rem:',rem)
+        if rem == 0:
+            string+='Z'
+            n = int((n/26)-1)
+        else:
+            string+= chr(rem + (ord('A')-1))
+            n = int(n/26)
+
+        print('n:',n)
+        print(string)
+    string1 = string[::-1]
+    return string1
 
 def get_depth(d):
     o=[]
