@@ -1,6 +1,5 @@
 import re
 
-
 def count_evens(a):
     b=[i for i in a if i%2==0]
     return len(b)
@@ -71,4 +70,4 @@ def get_depth(d):
                     v_check(v)
     check(d)
     
-    return o
+    return 0
