@@ -1,3 +1,19 @@
+
+# Question #2:
+def analyze(str1):
+    d=0
+    l=0
+    for i in str1:
+        if i.isnumeric():
+            d+=1
+        elif i.isalpha():
+            l=l+1
+        else:
+            pass
+    print(l,d)
+
+analyze("2345ab")
+
 def sort_deck(input):
     customOreder = {'Jack':0, 'Queen':1, 'King':2,'Ace':3}
     strs = list(filter(lambda x : type(x) ==str,input))
@@ -27,6 +43,7 @@ def int_to_col(n):
         print(string)
     string1 = string[::-1]
     return string1
+
 def get_depth(d):
     o=[]
     def v_check(val):
