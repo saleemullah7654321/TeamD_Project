@@ -1,4 +1,4 @@
-def get_depth(d):
+def get_depth_path(d):
     o=[]
     def v_check(val):
         if isinstance(val,(int,str)):
@@ -18,4 +18,4 @@ def get_depth(d):
                     v_check(v)
     check(d)
     
-    return o
+    return 0
