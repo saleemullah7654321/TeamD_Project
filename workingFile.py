@@ -1,11 +1,11 @@
-
-
 import re
+
+
 def count_evens(a):
     b=[i for i in a if i%2==0]
-    print(len(b))
+    return len(b)
 
-count_evens([1,2,3,2,4,4,4])
+# count_evens([1,2,3,2,4,4,4])
 # Question #2:
 def analyze(str1):
     d=0
@@ -17,9 +17,9 @@ def analyze(str1):
             l=l+1
         else:
             pass
-    print(l,d)
+    return (l,d)
 
-analyze("2345ab")
+# analyze("2345ab")
 
 def sort_deck(input):
     customOreder = {'Jack':0, 'Queen':1, 'King':2,'Ace':3}
